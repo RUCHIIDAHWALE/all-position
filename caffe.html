@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Cafe</title>
+
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 80px 20px;
+    margin-top: 60px;
+}
+
+.home {
+    background-color: #ffebcd;
+    text-align: center;
+    position: relative;
+}
+
+.home h1 {
+    position: relative;
+    font-size: 2.5em;
+    color: #4a4a4a;
+}
+
+.quote {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-style: italic;
+    color: #777;
+}
+
+.menu {
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 45%;
+    position: relative;
+}
+
+.menu-item h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.about {
+    background-color: #ffebcd;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.about p {
+    position: sticky;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+   </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo.jpg" alt="Cafe Logo" class="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="section home">
+        <h1>Caffine Dreams Delight...!!🤍</h1>
+        <p class="quote">"The best coffee in town, served with love❤️."</p>
+    </section>
+
+    <span id="menu" class="section menu">
+        <h2>Our menu..</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>250/-</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>380/-</p>
+                
+            </div>
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>350/-</p>
+                
+            </div>
+            <div class="menu-item">
+                <h3>Mocha</h3>
+                <p>280/-</p>
+                
+            </div>
+        </div>
+    </span>
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>We are a cozy, family-owned cafe located in the heart of the city, dedicated to serving the finest coffee and
+            pastries.</p>
+    </section>
+    <span id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@beautifulcafe.com</p>
+        <p>Phone: +123 456 7890</p>
+    </span>
+    <footer class="footer">
+        <p>&copy;2024 Caffine Dreams Delight. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
